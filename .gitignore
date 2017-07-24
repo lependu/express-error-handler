@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+dist
+.nyc_output
+coverage
+*.env
+Dockerfile
+Deploy
+docker-compose.yml
