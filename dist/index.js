@@ -1,0 +1,2 @@
+'use strict';var notFound=function notFound(req,res,next){var err=new Error('Not Found');err.status=404;next(err)};var errorHandler=function errorHandler(err,req,res,next){var status=err.status||500;if(process.env.NODE_ENV==='development'){res.status(status).send({message:err.message,details:err}).end()}else{res.status(status).send({message:err.message,details:null}).end()}};module.exports.notFound=notFound;module.exports.errorHandler=errorHandler;
+//# sourceMappingURL=index.js.map

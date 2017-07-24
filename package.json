@@ -7,7 +7,6 @@
     "build": "babel src -s -D --minified -d dist",
     "coverage": "nyc --reporter html tape --require babel-register test/*-test.js | tap-spec",
     "lint": "eslint src",
-    "preinstall": "npm run build",
     "test": "nyc --reporter text tape --require babel-register test/*-test.js | tap-spec"
   },
   "author": "lependu@protonmail.com",
