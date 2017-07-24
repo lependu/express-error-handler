@@ -1,12 +1,14 @@
 {
   "name": "express-error-handler",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Experimental error handler middleware forexpress project.",
   "main": "dist",
   "scripts": {
+    "build": "babel src -s -D --minified -d dist",
+    "coverage": "nyc --reporter html tape --require babel-register test/*-test.js | tap-spec",
     "lint": "eslint src",
-    "test": "nyc --reporter text tape --require babel-register test/*-test.js | tap-spec",
-    "coverage": "nyc --reporter html tape --require babel-register test/*-test.js | tap-spec"
+    "preinstall": "npm run build",
+    "test": "nyc --reporter text tape --require babel-register test/*-test.js | tap-spec"
   },
   "author": "lependu@protonmail.com",
   "license": "MIT",

@@ -1,8 +1,8 @@
 Experimental error handler for express.js projects.
 
 ### Usage
-
-`$ npm i git+https://github.com/lependu/express-error-handler.git [--save]`
+This project not published yet, so if you want to use, you need:
+`$ npm i git+https://github.com/lependu/express-error-handler.git#0.1.1 [--save]`
 
 ```JSON
 {
