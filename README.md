@@ -1,8 +1,15 @@
 Experimental error handler for express.js projects.
 
 ### Usage
-`$npm install [--save]`
 
+`$ npm i git+https://github.com/lependu/express-error-handler.git [--save]`
+
+```JSON
+{
+  dependencies: {
+    "express-error-handler": "git+https
+  }
+}
 ```Javascript
 import express from 'express';
 import bodyParser from 'body-parser';
